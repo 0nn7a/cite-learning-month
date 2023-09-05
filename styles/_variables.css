@@ -1,0 +1,15 @@
+:root {
+  --cite-pin-white: #fff;
+  --cite-pin-black: #000;
+
+  --cite-primary-color: #194f8b;
+  --cite-primary-light: #0f6ca9;
+  --cite-primary-dark: #0f2f55;
+
+  --cite-secondary-color: #32a0e8;
+  --cite-secondary-light: #b4e3fd;
+  --cite-secondary-dark: #0a4870;
+
+  --cite-highlight-yellow: #f7ff69;
+  --cite-highlight-blue: #5ca0eb;
+}
