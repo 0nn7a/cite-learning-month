@@ -27,6 +27,7 @@ body {
   background: url("../images/pc/background_blue.png") repeat-y;
   overflow: hidden auto;
   scroll-behavior: smooth;
+  overscroll-behavior: none;
 }
 
 h1,

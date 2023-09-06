@@ -16,7 +16,7 @@
 .feature__bg-item {
   display: none;
   position: absolute;
-  top: 1rem;
+  top: 0;
   left: 43%;
   z-index: -1;
   width: 14rem;
@@ -32,13 +32,13 @@
     84% 76%,
     0 78%
   );
-  transform: translate(-50%, 0);
+  transform: translate(-50%, 10%);
 }
 .feature__bg-item:nth-of-type(even) {
   top: 100%;
   left: 61%;
   clip-path: polygon(0 6%, 100% 0, 100% 78%, 16% 78%, 0 100%, 5% 78%, 0 78%);
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, -90%);
 }
 .feature__chat-item {
   padding: 3rem 2rem;
