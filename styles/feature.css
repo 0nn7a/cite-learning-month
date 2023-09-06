@@ -16,7 +16,7 @@
 .feature__bg-item {
   display: none;
   position: absolute;
-  top: 0;
+  top: 1rem;
   left: 43%;
   z-index: -1;
   width: 14rem;
@@ -32,7 +32,7 @@
     84% 76%,
     0 78%
   );
-  transform: translate(-50%, 10%);
+  transform: translate(-50%, 5%);
 }
 .feature__bg-item:nth-of-type(even) {
   top: 100%;
