@@ -24,7 +24,7 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
-  background: url("../images/pc/background_blue.png") repeat-y;
+  background: url("../images/pc/background_blue.png") repeat;
   overflow: hidden auto;
   scroll-behavior: smooth;
   overscroll-behavior: none;
