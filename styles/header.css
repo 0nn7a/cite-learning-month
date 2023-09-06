@@ -8,8 +8,32 @@
   align-items: center;
   gap: 1rem;
 }
+.header__phone__img {
+  display: none;
+  position: relative;
+  width: 100vw;
+  justify-content: center;
+  padding: 15vw 0 65vw;
+  margin-bottom: 5rem;
+  background: url("../images/phone/Header_people_1.png") bottom center no-repeat;
+  background-size: contain;
+}
+.header__phone__img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -2rem;
+  height: 10vw;
+  width: 100%;
+  background: url("../images/phone/Header_cloud_1.png") top left no-repeat;
+  background-size: contain;
+}
+.header__phone__text {
+  width: 80%;
+}
 .header__img {
   display: block;
+  width: 100%;
   max-width: 100rem;
   margin-bottom: 5rem;
   object-fit: cover;
@@ -17,6 +41,7 @@
 .header__title {
   font-size: 3rem;
   font-weight: 600;
+  text-align: center;
   letter-spacing: 0.2em;
   color: var(--cite-primary-color);
 }
@@ -30,4 +55,37 @@
   border-color: var(--cite-primary-color) transparent transparent transparent;
   border-style: solid dashed dashed dashed;
   border-width: 1.25rem;
+}
+
+/* RWD */
+@media (min-width: 1200px) {
+  .header__title {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .header__container {
+    width: 100vw;
+    padding: 10rem 2rem 3rem;
+    background: url("../images/phone/background_header.png") bottom center
+      no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .header__phone__img {
+    display: flex;
+  }
+  .header__img {
+    display: none;
+  }
+  .header__title {
+    font-size: 4.2vw;
+  }
+  .header__title:last-of-type {
+    white-space: pre-wrap;
+    font-size: 5vw;
+  }
 }
