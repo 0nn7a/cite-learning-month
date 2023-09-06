@@ -13,7 +13,7 @@
   position: relative;
   width: 100vw;
   justify-content: center;
-  padding: 15vw 0 65vw;
+  padding: 13vw 0 80vw;
   margin-bottom: 5rem;
   background: url("../images/phone/Header_people_1.png") bottom center no-repeat;
   background-size: contain;
@@ -29,7 +29,7 @@
   background-size: contain;
 }
 .header__phone__text {
-  width: 80%;
+  width: 70%;
 }
 .header__img {
   display: block;
