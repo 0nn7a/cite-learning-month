@@ -254,10 +254,10 @@
     padding: 8rem 5rem;
   }
   .live__title {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     padding: 1rem 2rem 0.5rem 2.5rem;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+    border-top-left-radius: 1.75rem;
+    border-top-right-radius: 1.75rem;
   }
   .course__item {
     grid-template-columns: max-content 1fr;
@@ -291,16 +291,16 @@
     padding: 8rem 2rem;
   }
   .live__title {
-    font-size: 2.4rem;
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
+    padding: 0.75rem 1rem 0.25rem 1.5rem;
+    font-size: 4.5vw;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
   }
   .course__item {
-    grid-template-columns: 1fr max-content;
-    padding: 1rem 2.5rem;
+    grid-template-columns: minmax(8rem, 12rem) max-content;
+    padding: 2rem;
   }
   .course__item__circle {
-    max-width: 12rem;
     width: 100%;
     padding: 1rem;
   }
