@@ -392,12 +392,16 @@
     padding: 0 8vw;
   }
 
+  .teacher__item__text {
+    padding: 1rem 1.5rem;
+  }
+
   .teacher__item__text h5 {
-    font-size: 3.2vw;
+    font-size: 4vw;
   }
 
   .teacher__item__text p {
-    font-size: 1.8vw;
+    font-size: 2.4vw;
   }
 }
 
@@ -445,5 +449,13 @@
     padding: 0.25rem;
     font-size: 2vw;
     transform: translate(30%, 20%);
+  }
+
+  .teacher__item__text h5 {
+    font-size: 4.4vw;
+  }
+
+  .teacher__item__text p {
+    font-size: 2.8vw;
   }
 }
