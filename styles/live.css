@@ -6,6 +6,7 @@
   background: url("../images/pc/background_live.jpg") top center repeat;
   background-size: cover;
 }
+
 .live__cover {
   width: 100%;
   max-width: 120rem;
@@ -14,6 +15,7 @@
   align-items: center;
   padding: 8rem;
 }
+
 .live__title {
   padding: 1rem 2.5rem 0.5rem 3rem;
   font-size: 3.2rem;
@@ -24,6 +26,7 @@
   border-top-right-radius: 2.5rem;
   transform: translateY(1px);
 }
+
 .live__color {
   display: flex;
   flex-direction: column;
@@ -43,6 +46,7 @@
   border-top-right-radius: 1.9rem;
   overflow: hidden;
 }
+
 .course__item {
   position: relative;
   width: 100%;
@@ -53,10 +57,12 @@
   color: var(--cite-highlight-yellow);
   background-color: var(--cite-tertiary-light);
 }
+
 .course__item:nth-of-type(even) {
   color: var(--cite-primary-color);
   background-color: var(--cite-secondary-light);
 }
+
 .course__item::before {
   content: "";
   position: absolute;
@@ -75,6 +81,7 @@
   background-size: 1rem 100%;
   transform: translateY(50%);
 }
+
 .course__item__circle {
   position: relative;
   display: flex;
@@ -89,20 +96,24 @@
   background-color: var(--cite-pin-white);
   border-radius: 100rem;
 }
+
 .course__item__circle h5 {
   font-size: 3rem;
   font-weight: 600;
   line-height: 1.6;
   letter-spacing: 0.1em;
 }
+
 .course__item__circle p {
   font-size: 1.6rem;
   letter-spacing: 0.1em;
 }
+
 .course__item__circle p:first-of-type {
   position: relative;
   margin-bottom: 2rem;
 }
+
 .course__item__circle p:first-of-type::before {
   content: "";
   position: absolute;
@@ -113,6 +124,7 @@
   background-color: var(--cite-primary-color);
   transform: translate(-50%, 0.5rem);
 }
+
 .course__item__circle span {
   display: flex;
   justify-content: center;
@@ -129,6 +141,7 @@
   border-radius: 100rem;
   transform: translate(20%, 20%);
 }
+
 .course__item__content {
   display: flex;
   flex-direction: column;
@@ -136,12 +149,14 @@
   align-items: flex-start;
   gap: 1.5rem;
 }
+
 .course__item__content h4 {
   font-size: 2.6vw;
   font-weight: 600;
   letter-spacing: 0.15em;
   color: inherit;
 }
+
 .course__item__content p {
   padding: 0 0.5rem;
   font-size: 2rem;
@@ -149,20 +164,24 @@
   color: var(--cite-pin-white);
   background-color: var(--cite-tertiary-color);
 }
+
 .course__item__content p span {
   display: inline-block;
   font-size: 80%;
 }
+
 .course__item__content p span::first-letter {
   font-size: 65%;
   color: var(--cite-highlight-yellow);
 }
+
 .course__item__btns {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
 }
+
 .course__item__btns button {
   padding: 0.25rem 2.5rem 0.25rem 2.8rem;
   font-size: 2.5rem;
@@ -178,12 +197,58 @@
   border-radius: 100rem;
   transition: all 0.2s ease-out;
 }
+
 .course__item__btns button:last-of-type {
   color: var(--cite-tertiary-dark);
   background: var(--cite-pin-white);
 }
+
 .course__item__btns button:hover {
   opacity: 0.7;
+}
+
+.teacher__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 4rem;
+}
+
+.teacher__item {
+  position: relative;
+  display: flex;
+  margin: 0 -0.8vw;
+}
+
+.teacher__item__img {
+  width: 100%;
+}
+
+.teacher__item__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1vw 1.5vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 1rem;
+  color: var(--cite-pin-white);
+  transform: skewX(-15deg);
+}
+
+.teacher__item__text > * {
+  transform: skewX(10deg);
+  letter-spacing: 0.1em;
+}
+
+.teacher__item__text h5 {
+  font-family: Trebuchet MS, Arial, sans-serif;
+  font-size: 2.5vw;
+}
+
+.teacher__item__text p {
+  font-size: 1.2vw;
+  font-weight: 300;
 }
 
 /* RWD */
@@ -192,22 +257,43 @@
     padding: 1.5rem 3rem 1rem 3.5rem;
     font-size: 3.5rem;
   }
+
   .course__item {
     padding: 3rem 5rem;
     gap: 5rem;
   }
+
   .course__item__content h4 {
     font-size: 3rem;
   }
+
   .course__item__content p {
     padding: 0.25rem 1rem;
     font-size: 2.4rem;
   }
+
   .course__item__btns button {
     padding: 0.3rem 2.8rem 0.3rem 3rem;
     font-size: 2.8rem;
   }
+
+  .teacher__item {
+    margin: 0 -1rem;
+  }
+
+  .teacher__item__text {
+    padding: 1rem 2rem;
+  }
+
+  .teacher__item__text h5 {
+    font-size: 3rem;
+  }
+
+  .teacher__item__text p {
+    font-size: 1.4rem;
+  }
 }
+
 @media (max-width: 991.98px) {
   .course__item {
     padding: 3rem;
@@ -217,12 +303,14 @@
     justify-content: center;
     gap: 1rem;
   }
+
   .course__item__circle {
     grid-row: 1 / -1;
     height: 100%;
     width: auto;
     margin-right: 4rem;
   }
+
   .course__item__circle h5 {
     font-size: 3vw;
   }
@@ -230,59 +318,86 @@
   .course__item__content {
     gap: 1rem;
   }
+
   .course__item__content h4 {
     font-size: 2.8vw;
     letter-spacing: 0.2em;
   }
+
   .course__item__content p {
     font-size: 2rem;
   }
+
   .course__item__btns {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 1rem;
   }
+
   .course__item__btns button {
     padding: 0.2rem 2rem 0.2rem 2.5rem;
     font-size: 1.6rem;
     letter-spacing: 0.1em;
   }
 }
+
 @media (max-width: 767.98px) {
   .live__cover {
     padding: 8rem 5rem;
   }
+
   .live__title {
     font-size: 2.6rem;
     padding: 1rem 2rem 0.5rem 2.5rem;
     border-top-left-radius: 1.75rem;
     border-top-right-radius: 1.75rem;
   }
+
   .course__item {
     grid-template-columns: max-content 1fr;
     padding: 3rem;
     gap: 1rem 2rem;
   }
+
   .course__item__circle {
     align-self: center;
     height: auto;
     width: 15rem;
     margin-right: 0;
   }
+
   .course__item__circle h5 {
     font-size: 2.5rem;
     letter-spacing: 0.1em;
   }
+
   .course__item__content h4 {
     font-size: 3.2vw;
   }
+
   .course__item__content p {
     font-size: 2.6vw;
   }
+
   .course__item__btns button {
     padding: 0.1rem 1.8rem 0.1rem 2rem;
     font-size: 2.6vw;
+  }
+
+  .teacher__list {
+    grid-template-rows: repeat(2, max-content);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 0;
+    padding: 0 8vw;
+  }
+
+  .teacher__item__text h5 {
+    font-size: 3.2vw;
+  }
+
+  .teacher__item__text p {
+    font-size: 1.8vw;
   }
 }
 
@@ -290,34 +405,42 @@
   .live__cover {
     padding: 8rem 2rem;
   }
+
   .live__title {
     padding: 0.75rem 1rem 0.25rem 1.5rem;
     font-size: 4.5vw;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
   }
+
   .course__item {
     grid-template-columns: minmax(8rem, 12rem) max-content;
     padding: 2rem;
   }
+
   .course__item__circle {
     width: 100%;
     padding: 1rem;
   }
+
   .course__item__circle h5 {
     font-size: 3.2vw;
   }
+
   .course__item__circle p {
     font-size: 2.6vw;
   }
+
   .course__item__circle p:first-of-type {
     margin-bottom: 1rem;
   }
+
   .course__item__circle p:first-of-type::before {
     height: 1.5vw;
     width: 0.1rem;
     transform: translate(-50%, 25%);
   }
+
   .course__item__circle span {
     padding: 0.25rem;
     font-size: 2vw;
