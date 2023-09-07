@@ -10,6 +10,12 @@
   --cite-secondary-light: #b4e3fd;
   --cite-secondary-dark: #0a4870;
 
+  --cite-tertiary-color: #569bcc;
+  --cite-tertiary-light: #7fbae4;
+  --cite-tertiary-lighter: #e5f1f9;
+  --cite-tertiary-dark: #106ca8;
+  --cite-tertiary-darker: #0b4870;
+
   --cite-highlight-yellow: #f7ff69;
   --cite-highlight-blue: #5ca0eb;
 }

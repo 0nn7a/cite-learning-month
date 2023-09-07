@@ -1,0 +1,34 @@
+.heading-1 {
+  width: 32rem;
+  padding: 1rem 0 1rem 0.5rem;
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: var(--cite-pin-white);
+  background: linear-gradient(
+    to right,
+    var(--cite-tertiary-darker),
+    var(--cite-tertiary-dark)
+  );
+  border-radius: 10rem;
+}
+@media (max-width: 991.98px) {
+  .heading-1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .heading-1 {
+    width: 28rem;
+    padding: 0.75rem 0 0.75rem 0.5rem;
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .heading-1 {
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    width: 22rem;
+    font-size: 2.2rem;
+  }
+}
