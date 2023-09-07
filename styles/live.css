@@ -154,7 +154,7 @@
   font-size: 80%;
 }
 .course__item__content p span::first-letter {
-  font-size: 1.2rem;
+  font-size: 65%;
   color: var(--cite-highlight-yellow);
 }
 .course__item__btns {
@@ -315,7 +315,8 @@
   }
   .course__item__circle p:first-of-type::before {
     height: 1.5vw;
-    transform: translate(-50%, 0.25vw);
+    width: 0.1rem;
+    transform: translate(-50%, 25%);
   }
   .course__item__circle span {
     padding: 0.25rem;
