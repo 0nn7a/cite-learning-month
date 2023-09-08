@@ -125,7 +125,7 @@
 .feature__introduce__date .big-font,
 .feature__introduce__sales .big-font {
   display: inline-block;
-  font-family: Trebuchet MS, Arial, sans-serif;
+  font-family: Trebuchet MS, "Noto Sans TC", Helvetica, Arial, sans-serif;
   font-size: 4.6vw;
   transform: translateY(3px);
 }
@@ -151,7 +151,7 @@
 }
 
 .feature__introduce__circle h3 {
-  font-family: Trebuchet MS, Arial, sans-serif;
+  font-family: Trebuchet MS, "Noto Sans TC", Helvetica, Arial, sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
   letter-spacing: 0.1em;
