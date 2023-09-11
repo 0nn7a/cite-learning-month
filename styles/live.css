@@ -58,12 +58,10 @@
   color: var(--cite-highlight-yellow);
   background-color: var(--cite-tertiary-light);
 }
-
 .course__item:nth-of-type(even) {
   color: var(--cite-primary-color);
   background-color: var(--cite-secondary-light);
 }
-
 .course__item::before {
   content: "";
   position: absolute;
@@ -97,24 +95,20 @@
   background-color: var(--cite-pin-white);
   border-radius: 100rem;
 }
-
 .course__item__circle h5 {
   font-size: 3rem;
   font-weight: 600;
   line-height: 1.6;
   letter-spacing: 0.1em;
 }
-
 .course__item__circle p {
   font-size: 1.6rem;
   letter-spacing: 0.1em;
 }
-
 .course__item__circle p:first-of-type {
   position: relative;
   margin-bottom: 2rem;
 }
-
 .course__item__circle p:first-of-type::before {
   content: "";
   position: absolute;
@@ -125,7 +119,6 @@
   background-color: var(--cite-primary-color);
   transform: translate(-50%, 0.5rem);
 }
-
 .course__item__circle span {
   display: flex;
   justify-content: center;
@@ -142,7 +135,6 @@
   border-radius: 100rem;
   transform: translate(20%, 20%);
 }
-
 .course__item__content {
   display: flex;
   flex-direction: column;
@@ -150,14 +142,12 @@
   align-items: flex-start;
   gap: 1.5rem;
 }
-
 .course__item__content h4 {
   font-size: 2.6vw;
   font-weight: 600;
   letter-spacing: 0.15em;
   color: inherit;
 }
-
 .course__item__content p {
   display: flex;
   align-items: center;
@@ -169,12 +159,10 @@
   color: var(--cite-pin-white);
   background-color: var(--cite-tertiary-color);
 }
-
 .course__item__content p span {
   display: inline-block;
   font-size: 75%;
 }
-
 .course__item__content p span:first-of-type {
   font-size: 50%;
   color: var(--cite-highlight-yellow);
@@ -186,7 +174,6 @@
   justify-content: center;
   gap: 2rem;
 }
-
 .course__item__btns button {
   padding: 0.25rem 2.5rem 0.25rem 2.8rem;
   font-size: 2.5rem;
@@ -202,12 +189,10 @@
   border-radius: 100rem;
   transition: all 0.2s ease-out;
 }
-
 .course__item__btns button:last-of-type {
   color: var(--cite-tertiary-dark);
   background: var(--cite-pin-white);
 }
-
 .course__item__btns button:hover {
   opacity: 0.7;
 }
@@ -217,17 +202,14 @@
   grid-template-columns: repeat(4, 1fr);
   padding: 0 4rem;
 }
-
 .teacher__item {
   position: relative;
   display: flex;
   margin: 0 -0.8vw;
 }
-
 .teacher__item__img {
   width: 100%;
 }
-
 .teacher__item__text {
   position: absolute;
   bottom: 0;
@@ -240,18 +222,15 @@
   color: var(--cite-pin-white);
   transform: skewX(-15deg);
 }
-
 .teacher__item__text > * {
   transform: skewX(10deg);
   letter-spacing: 0.1em;
 }
-
 .teacher__item__text h5 {
   font-family: Trebuchet MS, "Noto Sans TC", Helvetica, Arial, sans-serif;
   font-size: 2.5vw;
   font-weight: 500;
 }
-
 .teacher__item__text p {
   font-size: 1.2vw;
   font-weight: 300;
@@ -268,11 +247,9 @@
     padding: 3rem 5rem;
     gap: 5rem;
   }
-
   .course__item__content h4 {
     font-size: 3rem;
   }
-
   .course__item__content p {
     padding: 0.25rem 1rem;
     font-size: 2.4rem;
@@ -286,7 +263,6 @@
   .teacher__item {
     margin: 0 -1rem;
   }
-
   .teacher__item__text {
     padding: 1rem 2rem;
   }
@@ -302,49 +278,93 @@
 
 @media (max-width: 991.98px) {
   .course__item {
-    padding: 3rem;
+    padding: 3rem 3rem 3.5rem;
     width: 100%;
-    grid-template-rows: repeat(2, max-content);
-    grid-template-columns: repeat(2, max-content);
-    justify-content: center;
-    gap: 1rem;
+    grid-template-rows: repeat(3, max-content);
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    color: var(--cite-pin-white);
   }
 
   .course__item__circle {
-    grid-row: 1 / -1;
-    height: 100%;
-    width: auto;
-    margin-right: 4rem;
+    grid-row: 1 / span 1;
+    height: auto;
+    width: 100%;
+    padding: 0 0 1rem;
+    aspect-ratio: auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    border-radius: 0;
+    background-color: transparent;
+    color: var(--cite-pin-white);
   }
-
+  .course__item:nth-of-type(even) .course__item__circle {
+    color: var(--cite-primary-color);
+  }
+  .course__item__circle::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.15rem;
+    width: 100%;
+    background: linear-gradient(
+      to right,
+      currentColor,
+      currentColor 0.75rem,
+      transparent 0.75rem,
+      transparent
+    );
+    background-size: 1.25rem 100%;
+    transform: translateY(50%);
+    opacity: 0.3;
+  }
   .course__item__circle h5 {
-    font-size: 3vw;
+    font-size: 3.6rem;
+    margin-right: auto;
+  }
+  .course__item__circle p {
+    font-weight: 600;
+    font-size: 2.4rem;
+  }
+  .course__item__circle p:first-of-type {
+    margin-bottom: 0;
+    margin-right: 15vw;
+  }
+  .course__item__circle p:first-of-type::before {
+    top: 50%;
+    left: 100%;
+    height: 0.125rem;
+    width: calc(15vw - 2rem);
+    background-color: currentColor;
+    transform: translate(1rem, -50%);
+  }
+  .course__item__circle span {
+    display: none;
   }
 
   .course__item__content {
     gap: 1rem;
   }
-
   .course__item__content h4 {
-    font-size: 2.8vw;
+    font-size: 3rem;
     letter-spacing: 0.2em;
   }
-
   .course__item__content p {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   .course__item__btns {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 1.5rem;
   }
-
   .course__item__btns button {
-    padding: 0.2rem 2rem 0.2rem 2.5rem;
-    font-size: 1.6rem;
-    letter-spacing: 0.1em;
+    flex-grow: 1;
+    padding: 0.5rem 2rem 0.5rem 2.5rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -352,7 +372,6 @@
   .live__cover {
     padding: 5rem;
   }
-
   .live__title {
     font-size: 2.6rem;
     padding: 1rem 2rem 0.5rem 2.5rem;
@@ -360,35 +379,20 @@
     border-top-right-radius: 1.75rem;
   }
 
-  .course__item {
-    grid-template-columns: max-content 1fr;
-    padding: 3rem;
-    gap: 1rem 2rem;
-  }
-
-  .course__item__circle {
-    align-self: center;
-    height: auto;
-    width: 15rem;
-    margin-right: 0;
-  }
-
   .course__item__circle h5 {
-    font-size: 2.5rem;
-    letter-spacing: 0.1em;
+    font-size: 3rem;
   }
 
   .course__item__content h4 {
+    font-size: 4.2vw;
+  }
+  .course__item__content p {
     font-size: 3.2vw;
   }
 
-  .course__item__content p {
-    font-size: 2.6vw;
-  }
-
   .course__item__btns button {
-    padding: 0.1rem 1.8rem 0.1rem 2rem;
-    font-size: 2.6vw;
+    padding: 0.2rem 1.8rem 0.2rem 2rem;
+    font-size: 3.6vw;
   }
 
   .teacher__list {
@@ -397,15 +401,12 @@
     gap: 2rem 0;
     padding: 0 8vw;
   }
-
   .teacher__item__text {
     padding: 1rem 1.5rem;
   }
-
   .teacher__item__text h5 {
     font-size: 4vw;
   }
-
   .teacher__item__text p {
     font-size: 2.4vw;
   }
@@ -415,7 +416,6 @@
   .live__cover {
     padding: 5rem 2rem;
   }
-
   .live__title {
     padding: 0.75rem 1rem 0.25rem 1.5rem;
     font-size: 4.5vw;
@@ -424,47 +424,29 @@
   }
 
   .course__item {
-    grid-template-columns: minmax(8rem, 12rem) max-content;
-    padding: 2rem;
-  }
-
-  .course__item__circle {
-    width: 100%;
-    padding: 1rem;
+    padding: 7vw 6vw 7.5vw;
   }
 
   .course__item__circle h5 {
-    font-size: 3.2vw;
+    font-size: 6.5vw;
   }
-
   .course__item__circle p {
-    font-size: 2.6vw;
+    font-size: 4.5vw;
   }
 
-  .course__item__circle p:first-of-type {
-    margin-bottom: 1rem;
+  .course__item__content h4 {
+    font-size: 4.5vw;
   }
-
-  .course__item__circle p:first-of-type::before {
-    height: 1.5vw;
-    width: 0.1rem;
-    transform: translate(-50%, 25%);
-  }
-
-  .course__item__circle span {
-    padding: 0.25rem;
-    font-size: 2vw;
-    transform: translate(30%, 20%);
+  .course__item__content p {
+    font-size: 3.5vw;
   }
 
   .teacher__item__text {
     padding: 0.5rem 1rem;
   }
-
   .teacher__item__text h5 {
     font-size: 4.2vw;
   }
-
   .teacher__item__text p {
     font-size: 2.4vw;
   }
