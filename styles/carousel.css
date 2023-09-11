@@ -13,7 +13,7 @@
     font-size: 4rem;
     text-align: center; 
     letter-spacing: 0.2em;
-    color: var(--cite-secondary-dark);
+    color: var(  --cite-primary-color);
     font-weight: 600;
 }
 .carousel-title-h3 span{
@@ -81,7 +81,7 @@
     font-size: 2rem;
     font-weight: 600;
     letter-spacing: 0.2em;
-    color: var(--cite-secondary-dark);
+    color: var(--cite-primary-color);
 }
 /* carousel content */
 .carousel .carousel-indicators {
@@ -119,7 +119,7 @@ background-color: white;
 cursor: pointer;
 overflow: hidden;
 border-radius: 0.8rem;
-border:  0.08rem solid #288FB9;
+border:  0.08rem solid var(--cite-secondary-color);
 text-decoration: none;
 transition: transform 0.3s ease; 
 }
@@ -201,8 +201,8 @@ background-color: transparent;
 .carousel-indicators button:nth-child(n+2):not(:last-child){
     width: 1.2rem;
     height: 1.2rem;
-    background-color: var(--cite-secondary-dark);
-    border: 0.05rem solid var(--cite-secondary-dark); 
+    background-color: var(--cite-tertiary-dark);
+    border: 0.05rem solid var(--cite-tertiary-dark); 
     margin-left:1.2rem;
     margin-right:1.2rem;
     transform: rotate(45deg);
@@ -210,7 +210,7 @@ background-color: transparent;
 }
 .carousel-indicators button:not(.active):nth-child(n+2):not(:last-child) {
     background-color: transparent;
-    border: 0.05rem solid var(--cite-secondary-dark); 
+    border: 0.05rem solid var(--cite-tertiary-dark); 
 }
 /* RWD */
 @media (max-width: 991.98px) {
@@ -362,5 +362,9 @@ background-color: transparent;
     height: 0.4rem;
     margin-left:0.2rem;
     margin-right:0.2rem;
-    }  
+    }
+    .carousel-indicators02 button:nth-child(n+2):not(:last-child){
+    margin-left:0.3rem;
+    margin-right:0.3rem;
+    }   
 }
