@@ -1,0 +1,54 @@
+.activity-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../images/pc/background_live.jpg) top center repeat;
+    background-size: cover;
+  }
+.activity-cover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:4rem 0;
+}
+.activity-content {
+    display: flex;
+    justify-content: center;
+    max-width: 110rem;
+}
+.activity-wrapper li{
+    display: flex;
+    letter-spacing: 0.2em;
+    color: var(--cite-pin-white);
+    font-size: 1.7rem;
+    align-items: baseline
+}
+.activity-container li::before {
+    content: "◆"; 
+    margin-right: 0.5rem; 
+    font-size: 1.2rem;
+    color: var(--cite-pin-white);
+}
+.activity-wrapper li:not(:last-child){
+    margin-bottom: 1.5rem;
+}
+.activity-container li:last-child{
+    padding-bottom: 3rem; 
+}
+@media (max-width: 991.98px) {
+    .activity-cover{
+        padding:2rem 0;
+        
+    }
+}
+@media (max-width: 767.98px) {
+    .activity-wrapper li{
+        font-size: 1.5rem;
+        }
+    .activity-container li::before {
+    font-size: 1rem;
+    }
+}
+@media (max-width: 575.98px) {
+}
