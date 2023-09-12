@@ -207,7 +207,7 @@
 .teacher__item {
   position: relative;
   display: flex;
-  margin: 0 -0.8vw;
+  margin: 0 -1vw;
 }
 .teacher__item__img {
   width: 100%;
@@ -263,7 +263,7 @@
   }
 
   .teacher__item {
-    margin: 0 -1rem;
+    margin: 0 -1.25rem;
   }
   .teacher__item__text {
     padding: 0 0 1rem 2rem;
@@ -406,6 +406,9 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem 0;
     padding: 0 8vw;
+  }
+  .teacher__item {
+    margin: 0 -1.8vw;
   }
   .teacher__item__text {
     padding: 0 0 1rem 1.5rem;
